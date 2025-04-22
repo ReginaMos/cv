@@ -21,7 +21,7 @@
 
     As part of my work, I actively participate in the creation and refinement of various modules in the administrative panel on Vue 2. I developed a partner network module of 8 sections with integration with backend services via REST API. I participate in improving the work and redesigning the main website of the bank (www.infinbank.com), integrated with the Bitrix-24 system.
 
-- **Invest Finanse Bank: internship, frontend-developer, July 2024 - October 2024**
+- **Invest Finanse Bank: internship, frontend-developer, July - October 2024**
 
     during this internship I mastered the Vue framework and also improved my general web application development skills. Actively participated in the development of a new module in the administrative panel for integration with Zolotaya Korona
 
@@ -36,15 +36,16 @@
 ## Education
 
 - **Moscow State University Tashkent branch**: 2020 - 2024
+
     Bachelor degree in Applied Mathematics and Computer Science 
 
 - **Rolling Scopes School, JS/FE Preschool**: July - October, 2024
 
-    [certificate](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://app.rs.school/certificate/mu347bbt)
+    [Сertificate](https://app.rs.school/certificate/mu347bbt)
 
 - **Rolling Scopes School, JavaScript/Front-end 2024Q4**: October, 2024 - June, 2025
 
-    [certificate](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://app.rs.school/certificate/mu347bbt)
+    [Сertificate](https://app.rs.school/certificate/mu347bbt)
 
 ## Languages
 - Russian (native)
