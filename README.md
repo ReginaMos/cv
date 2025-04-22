@@ -4,14 +4,13 @@
 
     I am a creative person with an analytical mind. I approach my work responsibly, I try to do everything on time and with high quality.
 
-    I have good knowledge and experience in the layout of layouts of varying complexity using HTML&CSS&JS, as well as creating components on Vue JS.
+    I have good knowledge and experience in the layout of layouts of varying complexity using HTML&CSS&JS, as well as creating components on Vue JS. I consider front-end development an interesting direction, where I see prospects for developing my skills and want to continue developing in this area.
 
-    I consider front-end development an interesting direction, where I see prospects for developing my skills and want to continue developing in this area.
+    ###Contacts:
+    
+        **Phone:** +998 (93) 571-81-35
 
-    > ###Contacts:
-    >
-    >**Phone:** +998 (93) 571-81-35
-    >**E-mail:** moiseevaryu@gmail.com
+        **E-mail:** moiseevaryu@gmail.com
 
 
 ## Skills and technologies
