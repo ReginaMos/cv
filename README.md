@@ -2,6 +2,18 @@
 
 ## About me
 
+    I am a creative person with an analytical mind. I approach my work responsibly, I try to do everything on time and with high quality.
+
+    I have good knowledge and experience in the layout of layouts of varying complexity using HTML&CSS&JS, as well as creating components on Vue JS.
+
+    I consider front-end development an interesting direction, where I see prospects for developing my skills and want to continue developing in this area.
+
+    > ###Contacts:
+    >
+    >**Phone:** +998 (93) 571-81-35
+    >**E-mail:** moiseevaryu@gmail.com
+
+
 ## Skills and technologies
 
 * Vue (Vue 2, VUEX, Vue Router, Vuetify)
@@ -31,7 +43,17 @@
 
 ## Portfolio
 
+- Adaptive and cross-browser layout of [Cards pages](https://www.infinbank.com/ru/private/cards/) and [Visa page](https://www.infinbank.com/ru/private/cards/visa/), made in pure HTML&CSS&JS, and integrated into the site using the Bitrix-24 system
 
+- Interactive responsive website built with HTML&CSS and added interactivity with JavaScript - [Link](https://rolling-scopes-school.github.io/reginamos-JSFE2024Q4/christmas-shop/)
+
+- "Desicion making tool" - single page application with routing and interactive elements with canvas - [Link](https://rolling-scopes-school.github.io/reginamos-JSFE2024Q4/decision-making-tool/)
+
+- "Flappy Bird" game - [Link](https://rolling-scopes-school.github.io/reginamos-JSFEPRESCHOOL2024Q2/js-random-game/)
+
+- "Nonograms" game - [Link](https://rolling-scopes-school.github.io/reginamos-JSFE2024Q4/Nonograms/)
+
+- "Simon Says" game - [Link](https://rolling-scopes-school.github.io/reginamos-JSFE2024Q4/simon-says/)
 
 ## Education
 
