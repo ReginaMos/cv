@@ -8,7 +8,7 @@ I have good knowledge and experience in the layout of layouts of varying complex
 
 ### Contacts:
         
-**Phone:** +998 (93) 571-81-35
+**Telegram:** @regina_mos
 
 **E-mail:** moiseevaryu@gmail.com
 
@@ -32,7 +32,11 @@ I have good knowledge and experience in the layout of layouts of varying complex
 
 - **Invest Finanse Bank: junior-frontend developer, October 2024 - now**
 
-    As part of my work, I actively participate in the creation and refinement of various modules in the administrative panel on Vue 2. I developed a partner network module of 8 sections with integration with backend services via REST API. I participate in improving the work and redesigning the main website of the bank (www.infinbank.com), integrated with the Bitrix-24 system.
+    Redesigned and finalized key sections of the corporate website on the 1C-Bitrix platform. This has improved the usability and visual perception of the resource by customers. The layout was based on Figma layouts adaptively and cross-browser, and the interface was displayed correctly on all popular devices and browsers.
+
+    Optimized the loading of the partner network's page by implementing the SPA architecture and using lazy-loading, which significantly reduced the time of the first rendering and increased the overall performance of the interface.
+    
+    Developed and implemented the partner network section in the administrative panel, which includes 8 subsections and a modal window system. This has significantly simplified the management of partner data and improved internal business processes. Implemented integration with back-end services via the REST API, ensuring stable operation of the client side and automation of a number of functions.
 
 - **Invest Finanse Bank: internship, frontend-developer, July - October 2024**
 
