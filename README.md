@@ -4,7 +4,7 @@
 
 I am a creative person with an analytical mind. I approach my work responsibly, I try to do everything on time and with high quality.
 
-I have good knowledge and experience in the layout of layouts of varying complexity using HTML&CSS&JS, as well as creating components on Vue JS. I consider front-end development an interesting direction, where I see prospects for developing my skills and want to continue developing in this area.
+I have good knowledge and experience in the layout of layouts of varying complexity using HTML&CSS&JS, as well as creating components on Vue JS or React JS. I consider front-end development an interesting direction, where I see prospects for developing my skills and want to continue developing in this area.
 
 ### Contacts:
         
@@ -15,10 +15,12 @@ I have good knowledge and experience in the layout of layouts of varying complex
 
 ## Skills and technologies
 
-* Vue (Vue 2, VUEX, Vue Router, Vuetify)
-* HTML5 & CSS3, SASS (adaptive and samntic layout with flex/grid)
-* Bitrix-24 1C
-* JavaScript ES6, TypeScript
+* Vue (Vue 2/3, VUEX/Pinia, Vue Router, Vuetify, i18n)
+* Nuxt JS
+* React (Redux, RTK Query)
+* Next JS
+* JavaScript ES6 & TypeScript
+* HTML5 & CSS3, SASS (adaptive, cross-browsing and semantic layout with flex/grid)
 * Webpack, Vite
 * Git, GitHub, GitLab
 * REST API, WebSockets
@@ -42,9 +44,7 @@ I have good knowledge and experience in the layout of layouts of varying complex
 
 ## Portfolio
 
-- Adaptive and cross-browser layout of [Cards pages](https://www.infinbank.com/ru/private/cards/) and [Visa page](https://www.infinbank.com/ru/private/cards/visa/), made in pure HTML&CSS&JS, and integrated into the site using the Bitrix-24 system
-
-- Interactive responsive website built with HTML&CSS and added interactivity with JavaScript - [Link](https://rolling-scopes-school.github.io/reginamos-JSFE2024Q4/christmas-shop/)
+- Adaptive and cross-browser layout of [Cards pages](https://www.infinbank.com/ru/private/cards/), [Visa page](https://www.infinbank.com/ru/private/cards/visa/) and [Offerts and tariffs page](https://www.infinbank.com/ru/private/tariffs/), made in pure HTML&CSS&JS, and integrated into the site using the 1C-Bitrix system
 
 - "Desicion making tool" - single page application with routing and interactive elements with canvas - [Link](https://rolling-scopes-school.github.io/reginamos-JSFE2024Q4/decision-making-tool/)
 
@@ -66,7 +66,11 @@ I have good knowledge and experience in the layout of layouts of varying complex
 
 - **Rolling Scopes School, JavaScript/Front-end 2024Q4**: October, 2024 - June, 2025
 
-    [Сertificate](https://app.rs.school/certificate/mu347bbt)
+    [Сertificate](https://app.rs.school/certificate/0srz7lu5)
+
+- **Rolling Scopes School, React 2025Q3**: July - September, 2025
+
+    [Сertificate](https://app.rs.school/certificate/0srz7lu5)
 
 ## Languages
 - Russian (native)
