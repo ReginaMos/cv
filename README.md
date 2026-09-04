@@ -32,7 +32,7 @@ My expertise lies in developing Vue.js 2/3 and React SPAs with TypeScript, build
 
 ## Experience
 
-- **DriveLens AI: Frontend Software Engineer, Novemver 2025 - now**
+- **DriveLens AI: Frontend Software Engineer, November 2025 - now**
 
     Developed a web service from scratch using Vue 3, TypeScript, and Vuetify: designed the application architecture, implemented the user interface and REST API integration, and covered key user scenarios with Cypress tests.
     
@@ -46,7 +46,7 @@ My expertise lies in developing Vue.js 2/3 and React SPAs with TypeScript, build
 
     Worked in a cross-functional team alongside backend developers, QA engineers, and analysts, participating in the full development lifecycle of new features.
 
-- **Invest Finanse Bank: Frontend Web Developer, October 2024 - Novemver 2025**
+- **Invest Finanse Bank: Frontend Web Developer, October 2024 - November 2025**
 
     Redesigned and finalized key sections of the corporate website on the 1C-Bitrix platform. This has improved the usability and visual perception of the resource by customers. The layout was based on Figma layouts adaptively and cross-browser, and the interface was displayed correctly on all popular devices and browsers.
 
