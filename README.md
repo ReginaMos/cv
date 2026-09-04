@@ -2,9 +2,9 @@
 
 ## About me
 
-I am a creative person with an analytical mind. I approach my work responsibly, I try to do everything on time and with high quality.
+**Frontend developer** with over 2+ years of commercial experience developing high-load web applications. I have worked on digital products in the fintech sector (a banking system with a user base of over 4 million) and at a rapidly growing startup. 
 
-I have good knowledge and experience in the layout of layouts of varying complexity using HTML&CSS&JS, as well as creating components on Vue JS or React JS. I consider front-end development an interesting direction, where I see prospects for developing my skills and want to continue developing in this area.
+My expertise lies in developing Vue.js 2/3 and React SPAs with TypeScript, building user interfaces from scratch, enhancing existing services, refactoring, and optimizing performance. I have experience working with legacy code, integrating REST APIs, implementing complex business logic, and maintaining scalable application architectures.
 
 ### Contacts:
         
@@ -15,22 +15,38 @@ I have good knowledge and experience in the layout of layouts of varying complex
 
 ## Skills and technologies
 
-* Vue (Vue 2/3, VUEX/Pinia, Vue Router, Vuetify, i18n)
+* Vue (Vue 2/3, VUEX/Pinia, Vue Router, Vuetify, Vue-Konva, Vue apollo, i18n)
 * Nuxt JS
-* React (Redux, RTK Query)
+* React (Redux, RTK Query, i18n)
 * Next JS
 * JavaScript ES6 & TypeScript
 * HTML5 & CSS3, SASS (adaptive, cross-browsing and semantic layout with flex/grid)
+* Vitest, Cypress
 * Webpack, Vite
 * Git, GitHub, GitLab
-* REST API, WebSockets
-* Python (pandas, numpy, aiogram, tkinter, docx, etc)
-* SQL (SQLite)
+* REST API, GraphQL, WebSockets
+* Python (FastAPI, pydantic, pandas, numpy, aiogram, tkinter, docx, etc)
+* SQL (SQLAlchemy, SQLite, PostgreSQL)
+* Docker
 * Figma, Adobe Photoshop
 
 ## Experience
 
-- **Invest Finanse Bank: junior-frontend developer, October 2024 - now**
+- **DriveLens AI: Frontend Software Engineer, Novemver 2025 - now**
+
+    Developed a web service from scratch using Vue 3, TypeScript, and Vuetify: designed the application architecture, implemented the user interface and REST API integration, and covered key user scenarios with Cypress tests.
+    
+    Enhanced the video processing system's functionality: implemented multi-stream video viewing, added multilingual support (Vue I18n), and introduced new user scenarios using Vue-Konva, thereby improving usability and the overall user experience.
+
+    Migrated the client application from GraphQL to REST API in close collaboration with backend developers, ensuring a smooth transition without losing existing functionality.
+
+    Developed a unified UI system based on Vuetify and MDI, refactored the codebase, and improved the developer onboarding process.
+
+    Developed and integrated automated end-to-end tests using Cypress, enhancing application reliability and reducing regressions.
+
+    Worked in a cross-functional team alongside backend developers, QA engineers, and analysts, participating in the full development lifecycle of new features.
+
+- **Invest Finanse Bank: Frontend Web Developer, October 2024 - Novemver 2025**
 
     Redesigned and finalized key sections of the corporate website on the 1C-Bitrix platform. This has improved the usability and visual perception of the resource by customers. The layout was based on Figma layouts adaptively and cross-browser, and the interface was displayed correctly on all popular devices and browsers.
 
@@ -56,7 +72,7 @@ I have good knowledge and experience in the layout of layouts of varying complex
 
 - "Nonograms" game - [Link](https://rolling-scopes-school.github.io/reginamos-JSFE2024Q4/Nonograms/)
 
-- "Simon Says" game - [Link](https://rolling-scopes-school.github.io/reginamos-JSFE2024Q4/simon-says/)
+- "Simon Says" game - [Link](https://reginamos.github.io/simon-says/)
 
 ## Education
 
@@ -74,7 +90,7 @@ I have good knowledge and experience in the layout of layouts of varying complex
 
 - **Rolling Scopes School, React 2025Q3**: July - September, 2025
 
-    [Сertificate](https://app.rs.school/certificate/0srz7lu5)
+    [Сertificate](https://app.rs.school/certificate/ydcehhnd)
 
 ## Languages
 - Russian (native)
