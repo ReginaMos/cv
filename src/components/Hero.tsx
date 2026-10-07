@@ -1,17 +1,11 @@
-import React from 'react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import hero from '../assets/hero.png'
 import CV_RU from '../assets/resume_regina_moiseeva_ru.pdf'
 import { DownloadIcon, Mail } from 'lucide-react'
 
 const Hero = () => {
-    const socialIcon = [
-        { icon: FaGithub, alt: 'GitHub', link: 'https://github.com/ReginaMos'},
-        { icon: FaLinkedin, alt: 'LinkedIn', link: 'https://www.linkedin.com/in/regina-moiseeva-158821284/'}
-    ]
     return (
         <section id="home" className='min-h-screen flex items-center relative overflow-hidden'>
-            <div className='container mx-auto px-4 sm:px-8 lg:px-14 py-12 lg:-mt-14 relative z-10'>
+            <div className='container mx-auto px-4 sm:px-8 lg:px-14 py-22 lg:py-12 lg:-mt-14 relative z-10'>
                 <div className='flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16'>
                     <div className='lg:w-2/5 w-full flex justify-center' data-aos='fade-right'>
                         <div className='relative group'>
@@ -30,14 +24,14 @@ const Hero = () => {
                             <span className='text-sm font-medium dark:text-red-300 text-gray-700'>Open to freelance</span>
                         </div>
 
-                        <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold md-3 dark:text-white text-gray-900'>
+                        <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold mb-3 dark:text-white text-gray-900'>
                             Hi, I'm <span className='dark:text-red-300 text-red-600'>Regina</span>
                         </h1>
 
                         <h2 className='text-xl sm:text-2xl font-mono mb-4 dark:text-red-400 text-red-600'>
-                            <span className='text-gray-400 dark:text-gray-500'>&lt;</span>
+                            <span className='text-gray-400 dark:text-gray-500'>&lt;&nbsp;</span>
                             Frontend Software Engineer
-                            <span>&gt;</span>
+                            <span>&nbsp;&gt;</span>
                         </h2>
 
                         <p className='mb-6 leading-relaxed max-w-md lg:max-w-lg dark:text-gray-300 text-gray-700'>
@@ -75,6 +69,7 @@ const Hero = () => {
                             <a href='#contact' className='w-full sm:w-auto'>
                                 <button className='w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3
                                 rounded-full border-2 dark:border-red-500 border-red-600 dark:text-white text-gray-800 
+                                hover:text-white dark:hover:text-white 
                                 font-semibold dark:hover:bg-red-500 hover:bg-red-600 
                                 hover:shadow-[0_0_40px_rgba(220,38,38,0.7)] transition-all duration-300 transfrom hover:scale-105'>
                                     <Mail size={18}/>
