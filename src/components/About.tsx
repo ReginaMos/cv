@@ -1,22 +1,8 @@
 import { ArrowRight } from "lucide-react"
-import { FaGithub, FaLinkedin } from "react-icons/fa"
 import about from '../assets/about.png'
+import { socialLinks } from "../constants/socials"
 
 const About = () => {
-    const socialLinks = [
-        { 
-            icon: FaGithub, 
-            label: 'GitHub', 
-            link: 'https://github.com/ReginaMos',
-            color: 'hover:text-gray-500 hover:border-gray-500/40'
-        },
-        { 
-            icon: FaLinkedin, 
-            label: 'LinkedIn', 
-            link: 'https://www.linkedin.com/in/regina-moiseeva-158821284/',
-            color: 'hover:text-blue-500 hover:border-blue-500/40'
-        }
-    ]
     return (
         <section id='about' className="min-h-screen flex items-center py-20 px-4 sm:px-6 overflow-hidden relative">
             <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center relative z-10">
