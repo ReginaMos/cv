@@ -14,7 +14,7 @@ export const categories: string[] = ["all", SkillCategory.frontend, SkillCategor
 
 export const skillsArray: skillItem[] = [
     {
-        name: "Vue 2/3",
+        name: "Vue",
         level: 95,
         category: SkillCategory.frontend
     },
@@ -45,7 +45,7 @@ export const skillsArray: skillItem[] = [
     },
     {
         name: "HTML/CSS",
-        level: 99,
+        level: 95,
         category: SkillCategory.frontend
     },
     {
@@ -88,13 +88,13 @@ export const skillsArray: skillItem[] = [
 
     //Tools
     {
-        name: "Git/GitHub/GitLab",
+        name: "Git",
         level: 90,
         category: SkillCategory.tools
     },
     {
         name: "Docker",
-        level: 70,
+        level: 60,
         category: SkillCategory.tools
     },
     {

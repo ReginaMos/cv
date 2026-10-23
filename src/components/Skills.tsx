@@ -2,11 +2,7 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { skillsArray, categories } from "../constants/skills";
 
-interface SkillsProps {
-    darkMode: boolean;
-}
-
-const Skills: React.FC<SkillsProps> = () => {
+const Skills = () => {
     const [activeCategory, setActiveCategory] = useState("all")
     const [currentPage, setCurrentPage] = useState(0)
     const SKILLS_PER_PAGE = 3
@@ -30,7 +26,7 @@ const Skills: React.FC<SkillsProps> = () => {
     }
 
     return (
-        <section id="skills" className="min-h-screen flex items-center py-20 px-4 sm:px-6 overflow-hidden relative dark:bg-transparent' : 'bg-linear-to-br from-gray-50 to-red-50">
+        <section id="skills" className="min-h-screen flex items-center py-20 px-4 sm:px-6 overflow-hidden relative">
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute -top-40 -right-40 w-80 h-80 bg-red-500/5 rounded-full blur-3xl"></div>
                 <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-red-500/5 rounded-full blur-3xl"></div>
