@@ -1,8 +1,9 @@
 import { ArrowRight } from "lucide-react"
 import about from '../assets/about.png'
-import { socialLinks } from "../constants/socials"
+import { contacts } from "../constants/contacts"
 
 const About = () => {
+    const socialLinks = contacts.slice(0, 2)
     return (
         <section id='about' className="min-h-screen flex items-center py-20 px-4 sm:px-6 overflow-hidden relative">
             <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center relative z-10">
@@ -16,7 +17,7 @@ const About = () => {
                             About Me
                         </span>
                     </div>
-                    <h2 className="text-gray-900 tet-3xl sm:text-4xl lg:text-5xl font-bold mb-6 dark:text-white leading-tight">
+                    <h2 className="text-gray-900 text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 dark:text-white leading-tight">
                         Turning Ideas Into
                         <span className="text-red-600 dark:text-red-400 block">Digital Reality</span>
                     </h2>
@@ -50,7 +51,7 @@ const About = () => {
                     <a href='#contact' data-aos='fade-up' data-aos-delay='300'>
                         <button className='group inline-flex items-center justify-center gap-2 px-8 py-3
                             rounded-full text-white font-semibold bg-linear-to-r from-red-600 to-red-800 
-                            hover:shadow-[0_0_40px_rgba(220,38,38,0.7)] transition-all duration-300 transfrom hover:scale-105'
+                            hover:shadow-[0_0_40px_rgba(220,38,38,0.7)] transition-all duration-300 transform hover:scale-105'
                         >
                             Let`s Talk
                             <ArrowRight size={18}/>
@@ -58,12 +59,9 @@ const About = () => {
                     </a>
                     </div>
                     <div className="relative order-1 lg:order-2 flex justify-center items-center" data-aos='fade-left'>
-                        <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-90 lg:h-96">
-                            <div className="absolute inset-0 bg-linear-to-r from-red-600 to-red-800
-                            rounded-[40%_60%_60%/40%_60%_70%] filter blur-xl opacity-40 animate-pulse"/>
-
-                            <div className="absolute inset-0 bg-linear-to-r from-red-600 to-red-800
-                            rounded-[40%_60%_60%/40%_60%_70%] transform rotate-3 scale-105"/>
+                        <div className="relative group w-72 h-72 sm:w-80 sm:h-80 lg:w-90 lg:h-96">
+                            <div className="absolute inset-0 bg-linear-to-r from-red-600 to-red-800 rounded-full filter
+                            blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"/>
                             <img src={about} alt="About Image"
                                 className="relative z-10 rounded-full shadow-2xl w-full h-full
                                 object-contain border-2 border-red-500/30 backdrop-blur-sm"

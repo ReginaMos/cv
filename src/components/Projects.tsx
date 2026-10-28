@@ -27,7 +27,7 @@ const Projects = () => {
         const padding = parseFloat(styles.paddingLeft) + parseFloat(styles.paddingRight)
 
         const cardStep = card.offsetWidth + gap
-        const visibleCards = Math.max(1, Math.floor((el.clientWidth - padding + gap) / cardStep))
+        const visibleCards = Math.max(1, Math.round((el.clientWidth - padding + gap) / cardStep))
         const step = cardStep * visibleCards
 
         el.scrollBy({ left: direction === 'right' ? step : -step, behavior: 'smooth' })
@@ -80,7 +80,12 @@ const Projects = () => {
                         </button>
                     </div>
                 </div>
-                <div ref={scrollRef} className="flex gap-6 scrollbar-none snap-mandatory overflow-hidden w-full px-4">
+                <div
+                    ref={scrollRef}
+                    className="flex gap-6 overflow-x-auto snap-x snap-mandatory w-full
+                    -mx-2 px-6 scroll-px-6 -my-6 pt-6 pb-16
+                    scrollbar-none [&::-webkit-scrollbar]:hidden"
+                >
                     {projectsData.map((project, ind) => (
                         <div
                             key={`${project.id}-${ind}`}
