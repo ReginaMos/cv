@@ -1,3 +1,5 @@
+import type en from '../i18n/locales/en.json'
+
 enum SkillCategory {
     frontend = "frontend",
     backend = "backend",
@@ -10,7 +12,7 @@ interface skillItem {
     category: SkillCategory
 }
 
-export const categories: string[] = ["all", SkillCategory.frontend, SkillCategory.backend, SkillCategory.tools]
+export const categories: (keyof typeof en.skills.categories)[] =["all", SkillCategory.frontend, SkillCategory.backend, SkillCategory.tools]
 
 export const skillsArray: skillItem[] = [
     {

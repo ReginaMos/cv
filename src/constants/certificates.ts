@@ -1,7 +1,8 @@
+import type en from '../i18n/locales/en.json'
+
 interface Certificate {
     id: number,
-    title: string,
-    issuer: string,
+    key: keyof typeof en.certificates.items,
     date: string,
     credentialUrl: string
 }
@@ -9,29 +10,25 @@ interface Certificate {
 export const certificates: Certificate[] = [
     {
         id: 1,
-        title: 'JAVASCRIPT/FRONT-END 2024Q4 (JAVASCRIPT)',
-        issuer: 'The Rolling Scopes School',
+        key: 'jsFrontend2024q4',
         date: '2025',
         credentialUrl: 'https://app.rs.school/certificate/0srz7lu5'
     },
     {
         id: 2,
-        title: 'REACT 2025 Q3',
-        issuer: 'The Rolling Scopes School',
+        key: 'react2025q3',
         date: '2025',
         credentialUrl: 'https://app.rs.school/certificate/ydcehhnd'
     },
     {
         id: 3,
-        title: 'JS/FE PRE-SCHOOL 2024Q2 (JAVASCRIPT)',
-        issuer: 'The Rolling Scopes School',
+        key: 'jsPreSchool2024q2',
         date: '2024',
         credentialUrl: 'https://app.rs.school/certificate/mu347bbt'
     },
     {
         id: 4,
-        title: 'The 2023 ICPC Uzbekistan and Tajikistan Qualification, certificate of achievement',
-        issuer: 'ICPC - International Collegiate Programming Contest',
+        key: 'icpc2023',
         date: '2023',
         credentialUrl: 'https://icpc.global/'
     },

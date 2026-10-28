@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "title": "Regina Moiseeva — Frontend Developer",
+    "description": "Frontend Developer specializing in Vue.js, TypeScript and React. Portfolio, experience and contacts."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "certificates": "Certificates",
+    "contact": "Contact",
+    "toggleTheme": "Toggle theme",
+    "switchLanguage": "Switch language"
+  },
+  "hero": {
+    "status": "Open to freelance",
+    "greeting": "Hi, I'm",
+    "description": "I create modern, reliable web applications that combine clean code, thoughtful architecture, and great user experience.",
+    "stats": {
+      "years": "Years Experience",
+      "projects": "Projects Done",
+      "clients": "Happy Clients"
+    },
+    "downloadCv": "Download CV",
+    "hireMe": "Hire Me",
+    "imageAlt": "Regina Moiseeva",
+    "name": "Regina"
+  },
+  "about": {
+    "badge": "About Me",
+    "title": "Turning Ideas Into",
+    "description": "Frontend Developer with 2+ years of commercial experience, specializing in Vue.js, TypeScript, React, and modern web application development. I build scalable, user-friendly interfaces from scratch, work confidently with complex existing projects, and focus on writing clean, maintainable code while delivering high-quality results.",
+    "cta": "Let's Talk",
+    "imageAlt": "About me",
+    "titleAccent": "Digital Reality"
+  },
+  "experience": {
+    "badge": "Career Path",
+    "title": "Work",
+    "items": {
+      "drivelens": {
+        "period": "Nov 2025 - Present",
+        "achievements": [
+          "Built a web service from scratch with Vue 3, TypeScript and Vuetify — owned the architecture, UI, REST API integration and Cypress test coverage of key user flows",
+          "Extended a video processing system: multi-stream video viewing, multilingual support (Vue I18n) and new interactive scenarios on Vue-Konva",
+          "Migrated the client app from GraphQL to REST API together with the backend team — smooth transition with zero loss of existing functionality",
+          "Created a unified UI system on Vuetify and MDI, refactored the codebase and made onboarding of new developers faster",
+          "Introduced automated end-to-end tests with Cypress, improving app reliability and reducing regressions"
+        ]
+      },
+      "infinbank": {
+        "period": "Jul 2024 - Nov 2025",
+        "achievements": [
+          "Built the partner network section of the admin panel from scratch (8 subsections) with Vue 3, TypeScript and Vuetify, simplifying partner data management",
+          "Boosted partner network page performance by moving it to SPA architecture with lazy loading, significantly reducing first paint time",
+          "Redesigned key sections of the corporate 1C-Bitrix website — cards, Visa cards page, tariffs and offers — with responsive, cross-browser layouts from Figma",
+          "Worked in two-week Scrum sprints: daily stand-ups, sprint planning and retrospectives"
+        ]
+      }
+    },
+    "titleAccent": "Experience"
+  },
+  "skills": {
+    "badge": "Expertise",
+    "title": "My",
+    "description": "A closer look at the technologies and tools I use to build modern, reliable web applications.",
+    "categories": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools"
+    },
+    "prevPage": "Previous page",
+    "nextPage": "Next page",
+    "goToPage": "Go to page {{page}}",
+    "titleAccent": "Skills"
+  },
+  "projects": {
+    "title": "My",
+    "prev": "Previous projects",
+    "next": "Next projects",
+    "code": "Code",
+    "liveDemo": "Live Demo",
+    "items": {
+      "offersTariffs": {
+        "title": "Offers and Tariffs Page",
+        "desc": "Updated the page's visual design according to the Figma mockup. Improved media elements and restructured components to create a modern, user-friendly interface."
+      },
+      "weddingInvitation": {
+        "title": "Wedding Invitation",
+        "desc": "Designed and developed a wedding invitation website with an original visual concept. Created a unique design that combines aesthetics with a user-friendly experience."
+      },
+      "starWars": {
+        "title": "Star Wars Project",
+        "desc": "Developed a React application using the public Star Wars API, featuring pagination, filtering, and dynamic data fetching. Implemented modern UI components and interactive functionality to create a smooth and user-friendly experience."
+      },
+      "cardsPage": {
+        "title": "Cards Page",
+        "desc": "Redesigned the page and implemented a responsive layout based on the Figma design. Updated media elements and refactored the code to align with modern design standards."
+      },
+      "visaPage": {
+        "title": "Visa Page",
+        "desc": "Redesigned the Visa card page and implemented the new layout based on the Figma design. Updated media elements and optimized the code structure."
+      },
+      "simonSays": {
+        "title": "Simon Says Game",
+        "desc": "Developed an interactive Simon Says memory game using vanilla JavaScript, HTML, and CSS without any frameworks. Implemented game logic, sequence generation, user input handling, and score tracking."
+      }
+    },
+    "titleAccent": "Projects"
+  },
+  "certificates": {
+    "badge": "Certifications",
+    "title": "My",
+    "verify": "Verify",
+    "imageAlt": "Certificates",
+    "items": {
+      "jsFrontend2024q4": {
+        "title": "JAVASCRIPT/FRONT-END 2024Q4 (JAVASCRIPT)",
+        "issuer": "The Rolling Scopes School"
+      },
+      "react2025q3": {
+        "title": "REACT 2025 Q3",
+        "issuer": "The Rolling Scopes School"
+      },
+      "jsPreSchool2024q2": {
+        "title": "JS/FE PRE-SCHOOL 2024Q2 (JAVASCRIPT)",
+        "issuer": "The Rolling Scopes School"
+      },
+      "icpc2023": {
+        "title": "The 2023 ICPC Uzbekistan and Tajikistan Qualification, certificate of achievement",
+        "issuer": "ICPC - International Collegiate Programming Contest"
+      }
+    },
+    "titleAccent": "Certificates"
+  },
+  "contact": {
+    "title": "Get In",
+    "description": "Have a project in mind, an open position on your team, or just want to say hi? I'm open to new freelance work. Pick whichever channel suits you best and let's build something great together.",
+    "imageAlt": "Contact",
+    "channels": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "E-mail",
+      "telegram": "Telegram"
+    },
+    "titleAccent": "Touch"
+  },
+  "footer": {
+    "name": "Regina Moiseeva",
+    "builtWith": "Built with",
+    "source": "Source code"
+  }
+}

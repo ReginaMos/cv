@@ -11,29 +11,35 @@ import {
 
 import { motion } from 'framer-motion';
 import { Moon, Sun } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import type en from '../i18n/locales/en.json';
+
+type NavKey = Exclude<keyof typeof en.nav, 'toggleTheme' | 'switchLanguage'>;
 
 interface NavbarProps {
   darkMode: boolean;
   toggleDarkMode: () => void;
 }
 
-const navItems = [
-  { name: 'Home', link: '#home', icon: FaHome },
-  { name: 'About', link: '#about', icon: FaUser },
-  { name: 'Experience', link: '#experience', icon: FaBriefcase },
-  { name: 'Skills', link: '#skills', icon: FaCode },
-  { name: 'Projects', link: '#projects', icon: FaProjectDiagram },
-  { name: 'Certificates', link: '#certificates', icon: FaCertificate },
-  { name: 'Contact', link: '#contact', icon: FaEnvelope },
+const navItems: { key: NavKey; link: string; icon: typeof FaHome }[] = [
+  { key: 'home', link: '#home', icon: FaHome },
+  { key: 'about', link: '#about', icon: FaUser },
+  { key: 'experience', link: '#experience', icon: FaBriefcase },
+  { key: 'skills', link: '#skills', icon: FaCode },
+  { key: 'projects', link: '#projects', icon: FaProjectDiagram },
+  { key: 'certificates', link: '#certificates', icon: FaCertificate },
+  { key: 'contact', link: '#contact', icon: FaEnvelope },
 ];
 
 const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
-  const [activeTab, setActiveTab] = useState('Home');
+  const { t, i18n } = useTranslation();
+  const [activeTab, setActiveTab] = useState<NavKey>('home');
+  const nextLanguage = i18n.resolvedLanguage === 'ru' ? 'en' : 'ru';
 
   useEffect(() => {
     const updateActiveTab = () => {
       const isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
-      let current = 'Home';
+      let current: NavKey = 'home';
       let currentTop = -Infinity;
 
       for (const item of navItems) {
@@ -41,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
         if (!section) continue;
         const { top } = section.getBoundingClientRect();
         if (isAtBottom ? top > currentTop : top <= window.innerHeight / 2 && top > currentTop) {
-          current = item.name;
+          current = item.key;
           currentTop = top;
         }
       }
@@ -68,17 +74,30 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
           className='relative w-[95%] max-w-4xl mb-4'
         >
           <div className='relative bg-linear-to-r from-red-600 to-red-800 backdrop-blur-xl rounded-2xl shadow-2xl border border-white/20 px-3 py-2'>
+            <div className="absolute -top-5 left-3">
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={() => i18n.changeLanguage(nextLanguage)}
+                aria-label={t('nav.switchLanguage')}
+                className='w-9 h-9 rounded-full bg-gray-900 dark:bg-gray-100 text-white dark:text-black
+                text-xs font-bold transition-colors backdrop-blur-sm'
+              >
+                {nextLanguage.toUpperCase()}
+              </motion.button>
+            </div>
             <div className="absolute -top-5 right-3">
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={toggleDarkMode}
+                aria-label={t('nav.toggleTheme')}
                 className='p-2 rounded-full bg-gray-900 dark:bg-gray-100 transition-colors backdrop-blur-sm'
               >
                 { 
                   darkMode ? 
-                  ( <Sun className='w-5 lg:w-5 h-5 lg:h-5 text-black'/>) : 
-                  (<Moon className='w-5 lg:w-5 h-5 lg:h-5  text-white'/>)
+                  ( <Sun className='w-5 h-5 text-black'/>) : 
+                  (<Moon className='w-5 h-5 text-white'/>)
                 }
               </motion.button>
             </div>
@@ -86,15 +105,16 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
                 {
                   navItems.map((item) => {
                     const Icon = item.icon
-                    const isActive = activeTab === item.name
+                    const isActive = activeTab === item.key
                     return (
                       <motion.a
-                        key={item.name}
+                        key={item.key}
                         href={item.link}
-                        onClick={() => setActiveTab(item.name)}
+                        onClick={() => setActiveTab(item.key)}
+                        aria-label={t(`nav.${item.key}`)}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-                        className='flex flex-col items-center gap-0.5 py-1.5 px-2 relative group flex-1'
+                        className='flex flex-col items-center gap-0.5 py-2 sm:py-1.5 px-1 sm:px-2 relative group flex-1'
                       >
                         {
                           isActive && 
@@ -113,10 +133,10 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
                           }
                         />
 
-                        <span className={`text-[10px] font-medium transition-all duration-300
+                        <span className={`hidden sm:block text-[10px] font-medium transition-all duration-300
                           ${ isActive ? 'text-white' : 'text-white/60 group-hover:text-white'}`}
                         >
-                          {item.name}
+                          {t(`nav.${item.key}`)}
                         </span>
                       </motion.a>
                     )

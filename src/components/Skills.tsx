@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { skillsArray, categories } from "../constants/skills";
 
 const Skills = () => {
+    const { t } = useTranslation()
     const [activeCategory, setActiveCategory] = useState("all")
     const [currentPage, setCurrentPage] = useState(0)
     const SKILLS_PER_PAGE = 3
@@ -33,16 +35,16 @@ const Skills = () => {
             </div>
 
             <div className="max-w-6xl mx-auto w-full relative z-10">
-                <div className="text-center mb-16" data-aos="faded">
+                <div className="text-center mb-16" data-aos="fade-up">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 mb-5">
                         <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                        <span className="text-sm font-medium dark:text-red-400 text-red-600">Expertise</span>
+                        <span className="text-sm font-medium dark:text-red-400 text-red-600">{t('skills.badge')}</span>
                     </div>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold dark:text-white text-gray-900">
-                        My <span className="text-red-500 dark:text-red-400">Skills</span>
+                        {t("skills.title")} <span className="text-red-500 dark:text-red-400">{t("skills.titleAccent")}</span>
                     </h2>
                     <p className="mt-4 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                        A closer look at the technologies and tools I use to build modern, reliable web applications.
+                        {t('skills.description')}
                     </p>
                 </div>
 
@@ -56,7 +58,7 @@ const Skills = () => {
                               ? 'bg-linear-to-r from-red-600 to-red-800 text-white shadow-lg hover:shadow-[0_0_30px_rgba(220,38,38,0.5)]'
                               : 'border border-red-500/30 dark:border-red-500/30 dark:text-gray-300 text-gray-700 hover:border-red-500/60 hover:scale-105'}`}
                         >
-                            {category}
+                            {t(`skills.categories.${category}`)}
                         </button>
                     ))}
                 </div>
@@ -65,7 +67,7 @@ const Skills = () => {
                     <button
                         onClick={handlePrevPage}
                         className="p-2 rounded-full border border-red-500/30 hover:border-red-500/60 hover:bg-red-500/10 transition-all duration-300 dark:text-gray-300 text-gray-700 shrink-0"
-                        aria-label="Previous page"
+                        aria-label={t('skills.prevPage')}
                     >
                         <ChevronLeft size={28} />
                     </button>
@@ -101,7 +103,7 @@ const Skills = () => {
                     <button
                         onClick={handleNextPage}
                         className="p-2 rounded-full border border-red-500/30 hover:border-red-500/60 hover:bg-red-500/10 transition-all duration-300 dark:text-gray-300 text-gray-700 shrink-0"
-                        aria-label="Next page"
+                        aria-label={t('skills.nextPage')}
                     >
                         <ChevronRight size={28} />
                     </button>
@@ -112,12 +114,12 @@ const Skills = () => {
                         <button
                             key={index}
                             onClick={() => setCurrentPage(index)}
-                            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                            className={`h-3 rounded-full transition-all duration-300 ${
                                 index === currentPage
                                     ? 'bg-linear-to-r from-red-600 to-red-800 w-8'
-                                    : 'bg-red-500/30 hover:bg-red-500/60'
+                                    : 'w-3 bg-red-500/30 hover:bg-red-500/60'
                             }`}
-                            aria-label={`Go to page ${index + 1}`}
+                            aria-label={t('skills.goToPage', { page: index + 1 })}
                         />
                     ))}
                 </div>

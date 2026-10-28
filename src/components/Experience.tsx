@@ -1,16 +1,18 @@
+import { useTranslation } from "react-i18next"
 import { experience } from "../constants/experience"
 
 const Experience = () => {
+    const { t } = useTranslation()
     return (
         <section id="experience" className="py-20 px-4 sm:px-6 overflow-hidden relative">
             <div className="max-w-6xl mx-auto w-full relative z-10">
                 <div className="text-center mb-16" data-aos="fade-up">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 mb-5">
                         <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                        <span className="text-sm font-medium dark:text-red-400 text-red-600">Career Path</span>
+                        <span className="text-sm font-medium dark:text-red-400 text-red-600">{t('experience.badge')}</span>
                     </div>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold dark:text-white text-gray-900">
-                        Work <span className="text-red-500 dark:text-red-400">Experience</span>
+                        {t("experience.title")} <span className="text-red-500 dark:text-red-400">{t("experience.titleAccent")}</span>
                     </h2>
                 </div>
 
@@ -20,9 +22,10 @@ const Experience = () => {
 
                     {experience.map((job, index) => {
                         const isLeft = index % 2 === 0
+                        const achievements = t(`experience.items.${job.key}.achievements`, { returnObjects: true })
                         return (
                             <div
-                                key={`${job.company}-${index}`}
+                                key={job.key}
                                 className={`relative pl-16 md:row-span-2
                                     ${isLeft ? 'md:col-start-1 md:pl-0 md:pr-20' : 'md:col-start-2 md:pl-20'}
                                     ${index === 1 ? 'md:row-start-2' : ''}`}
@@ -54,11 +57,11 @@ const Experience = () => {
                                         {job.company}
                                     </h3>
                                     <p className="text-sm font-mono mt-1 mb-4 dark:text-red-300 text-red-600">
-                                        {job.period}
+                                        {t(`experience.items.${job.key}.period`)}
                                     </p>
 
                                     <ul className="flex flex-col gap-2 mb-5">
-                                        {job.achievements.map((item, i) => (
+                                        {achievements.map((item, i) => (
                                             <li
                                                 key={i}
                                                 className="relative pl-5 text-sm leading-relaxed dark:text-gray-300 text-gray-700

@@ -1,8 +1,10 @@
 import { ArrowRight } from "lucide-react"
 import about from '../assets/about.png'
 import { contacts } from "../constants/contacts"
+import { useTranslation } from "react-i18next"
 
 const About = () => {
+    const { t } = useTranslation()
     const socialLinks = contacts.slice(0, 2)
     return (
         <section id='about' className="min-h-screen flex items-center py-20 px-4 sm:px-6 overflow-hidden relative">
@@ -14,18 +16,14 @@ const About = () => {
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 mb-4">
                         <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
                         <span className="text-xs sm:text-sm font-semibold tracking-wider uppercase dark:text-red-400 text-red-600">
-                            About Me
+                            {t('about.badge')}
                         </span>
                     </div>
                     <h2 className="text-gray-900 text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 dark:text-white leading-tight">
-                        Turning Ideas Into
-                        <span className="text-red-600 dark:text-red-400 block">Digital Reality</span>
+                        {t("about.title")} <span className="text-red-600 dark:text-red-400 block">{t("about.titleAccent")}</span>
                     </h2>
                     <p className="text-base lg:text-lg mb-8 leading-relaxed dark:text-gray-300 text-gray-700 max-w-xl">
-                        Frontend Developer with 2+ years of commercial experience, specializing in Vue.js, TypeScript, React, 
-                        and modern web application development. I build scalable, user-friendly interfaces from scratch, 
-                        work confidently with complex existing projects, 
-                        and focus on writing clean, maintainable code while delivering high-quality results.
+                        {t('about.description')}
                     </p>
 
                     <div className="flex gap-4 mb-8">
@@ -33,9 +31,9 @@ const About = () => {
                             const IconComponent = social.icon
                             return (
                                 <a 
-                                    key={index} 
+                                    key={social.key}
                                     href={social.link}
-                                    aria-label={social.label}
+                                    aria-label={t(`contact.channels.${social.key}`)}
                                     data-aos='zoom-in'
                                     data-aos-delay={index * 100}
                                     className={`w-12 h-12 rounded-full flex items-center justify-center 
@@ -53,7 +51,7 @@ const About = () => {
                             rounded-full text-white font-semibold bg-linear-to-r from-red-600 to-red-800 
                             hover:shadow-[0_0_40px_rgba(220,38,38,0.7)] transition-all duration-300 transform hover:scale-105'
                         >
-                            Let`s Talk
+                            {t('about.cta')}
                             <ArrowRight size={18}/>
                         </button>
                     </a>
@@ -62,7 +60,7 @@ const About = () => {
                         <div className="relative group w-72 h-72 sm:w-80 sm:h-80 lg:w-90 lg:h-96">
                             <div className="absolute inset-0 bg-linear-to-r from-red-600 to-red-800 rounded-full filter
                             blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"/>
-                            <img src={about} alt="About Image"
+                            <img src={about} alt={t('about.imageAlt')}
                                 className="relative z-10 rounded-full shadow-2xl w-full h-full
                                 object-contain border-2 border-red-500/30 backdrop-blur-sm"
                             />
