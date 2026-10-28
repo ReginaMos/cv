@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   FaCertificate,
   FaCode,
   FaEnvelope,
   FaHome,
   FaProjectDiagram,
+  FaBriefcase,
   FaUser,
 } from 'react-icons/fa';
 
@@ -16,17 +17,47 @@ interface NavbarProps {
   toggleDarkMode: () => void;
 }
 
+const navItems = [
+  { name: 'Home', link: '#home', icon: FaHome },
+  { name: 'About', link: '#about', icon: FaUser },
+  { name: 'Experience', link: '#experience', icon: FaBriefcase },
+  { name: 'Skills', link: '#skills', icon: FaCode },
+  { name: 'Projects', link: '#projects', icon: FaProjectDiagram },
+  { name: 'Certificates', link: '#certificates', icon: FaCertificate },
+  { name: 'Contact', link: '#contact', icon: FaEnvelope },
+];
+
 const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
   const [activeTab, setActiveTab] = useState('Home');
 
-  const navItems = [
-    { name: 'Home', link: '#home', icon: FaHome },
-    { name: 'About', link: '#about', icon: FaUser },
-    { name: 'Skills', link: '#skills', icon: FaCode },
-    { name: 'Certificates', link: '#certificates', icon: FaCertificate },
-    { name: 'Projects', link: '#projects', icon: FaProjectDiagram },
-    { name: 'Contact', link: '#contact', icon: FaEnvelope },
-  ];
+  useEffect(() => {
+    const updateActiveTab = () => {
+      const isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      let current = 'Home';
+      let currentTop = -Infinity;
+
+      for (const item of navItems) {
+        const section = document.querySelector(item.link);
+        if (!section) continue;
+        const { top } = section.getBoundingClientRect();
+        if (isAtBottom ? top > currentTop : top <= window.innerHeight / 2 && top > currentTop) {
+          current = item.name;
+          currentTop = top;
+        }
+      }
+
+      setActiveTab(current);
+    };
+
+    updateActiveTab();
+    window.addEventListener('scroll', updateActiveTab, { passive: true });
+    window.addEventListener('resize', updateActiveTab);
+
+    return () => {
+      window.removeEventListener('scroll', updateActiveTab);
+      window.removeEventListener('resize', updateActiveTab);
+    };
+  }, []);
 
   return (
       <div className='fixed z-50 bottom-0 left-0 right-0 flex justify-center'>

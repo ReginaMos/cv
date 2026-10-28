@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
+import Experience from './components/Experience'
 import Certificates from './components/Certificates'
 import Projects from './components/Projects'
 import Contacts from './components/Contacts'
@@ -41,9 +42,10 @@ const App = () => {
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero/>
       <About/>
+      <Experience/>
       <Skills/>
-      <Certificates/>
       <Projects/>
+      <Certificates/>
       <Contacts/>
     </div>
   )
