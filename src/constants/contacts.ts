@@ -30,7 +30,7 @@ export const contacts: Contact[] = [
     {
         key: 'telegram',
         icon: FaTelegram,
-        link: 'https://t.me/reginamos',
+        link: 'https://t.me/regina_mos',
         color: 'hover:text-sky-500 hover:border-sky-500/40'
     }
 ]
